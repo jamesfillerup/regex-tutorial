@@ -14,40 +14,46 @@ The regex that I will break down will be for matching an email. It consists of t
 
 - [Anchors](#anchors)
 - [Quantifiers](#quantifiers)
-- [OR Operator](#or-operator)
 - [Character Classes](#character-classes)
-- [Flags](#flags)
 - [Grouping and Capturing](#grouping-and-capturing)
 - [Bracket Expressions](#bracket-expressions)
-- [Greedy and Lazy Match](#greedy-and-lazy-match)
-- [Boundaries](#boundaries)
-- [Back-references](#back-references)
-- [Look-ahead and Look-behind](#look-ahead-and-look-behind)
+
 
 ## Regex Components
 
 ### Anchors
 
-### Quantifiers
+The Anchors included in the section of code include the following:
+* `/` These will be on the outside of an expression calling the start and end of the expression
+* `^` This signifies the beginning of a string and matches it. It does not however match a character. It only matches the position.
+* `$` This is the symbol for the end of a string and matches it. It does not however match a character. It only matches the position.
 
-### OR Operator
+
+### Quantifiers
+The Quantifiers included in the section of code include the following:
+* `+` This needs to match one or more tokens in front of it
+* `{2,6}` This will match 2-6 of the tokens in front of it
+
 
 ### Character Classes
-
-### Flags
+The Character Classes included in the section of code include the following:
+* `[]` (character set) This matches the characters within the brackets to the characters in front of a string are not in brackets
+* `\.` (escaped character) This matches a '.' and the dot matches any character with exception to line breaks. It also is equal to `[^\n\r]`.
+* `a-z` (range) This matches the characters in the range from a through z
+* `0-9` (range) This matches the characters in the range from 0 through 9
+* `_` (character) This matches a '_'
+* `-` (character) This matches a '-'
+* `@` (character) This matches a '@'
+* `\d` (digit) This will match any number character from 0-9
 
 ### Grouping and Capturing
-
+The Grouping and Capturing characters included in the section of code include the following:
+* `()` (character set) This groups everything inside and makes a capture group. It can then be extracted as a substring or used as a backreference.
 ### Bracket Expressions
-
-### Greedy and Lazy Match
-
-### Boundaries
-
-### Back-references
-
-### Look-ahead and Look-behind
+The Bracket Expressions included in the section of code include the following:
+* `[]` (character set) This matches the characters within the brackets to the characters in front of a string are not in brackets
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+James Fillerup
+
